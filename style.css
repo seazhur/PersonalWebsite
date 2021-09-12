@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "apparel";
+    src: url(fonts/Apparel\ Black.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: "apparel";
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "apparel";
+    src: url(fonts/Apparel\ Regular\ It.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: "apparel";
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space_between;
+    align-items: center;
+    background: #111;
+    color: #fff; /*text color*/
+    z-index: 2;
+}
+
+.showcase nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000; /*way on top*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo { /* what is this */
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10; 
+    width: 50%;
+}
+
+.text h2 {
+    font-size: 5em; /*current multiplied by 5*/
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    padding: 40px 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ion-icon {
+    color: white;
+}
+
+/*
+ion-icon {
+  --ionicon-stroke-width: 16px;
+}
+*/
+
+.tablet {
+    position: relative;
+    z-index: 0; 
+    width: 50%;
+    height: 50%;
+    margin:0 auto;
+    display:block;
+}
+
+
+
+.tablet .nextButton {
+    background-color: #ff3737; /* Green */
+    text-decoration: none;
+    color: white;
+
+    /* margin:0 auto; */
+
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.text .learnMoreButton {
+    background-color: #ff3737; /* Green */
+    text-decoration: none;
+    color: white;
+    
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.resume {
+    z-index: 10000000; 
+}
+
+
+
+
+.text .photosButton {
+    background-color: #1CABE2; /* Green */
+    text-decoration: none;
+    color: white;
+    
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.text .bioPhotosButton {
+    background-color: #1c1fe2; /* Green */
+    text-decoration: none;
+    color: white;
+    
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
