@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <title>Cesar Fuentes</title>
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="functions.js"></script>
 
+    <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 
+    <title>Cesar Fuentes</title>
 </head>
+
 <body id="index">
     <section class="showcase">
 
         <nav>
-            <h2><a href="index.html" class="logo">Cesar Fuentes</a></h2>
-            <h5><a href="portfolio.html" class="logo">Portfolio</a></h5>
-            <h5><a href="qualifications.html" class="logo">Qualifications</a></h5>
-            <h5><a href="service.html" class="logo">Service</a></h5>
-            <h5><a href="bio.html" class="logo">Bio</a></h5>
+            <ul>
+                <li><h5><a href="portfolio.html" class="logo">Portfolio</a></h5></li>
+                <li><h5><a href="qualifications.html" class="logo">Qualifications</a></h5></li>
+                <li><a href="index.html" id="homeIcon" class="logo"><ion-icon name="bug-outline" size="Default"></ion-icon></a></li>
+                <li><h5><a href="service.html" class="logo">Service</a></h5></li>
+                <li><h5><a href="bio.html" class="logo">Bio</a></h5></li>
+            </ul>            
         </nav>
 
-        <video src="videos/sunflowers.mp4" muted loop autoplay>Video Unsupported</video>
+        <!-- // sparkles-outline // happy-outline // rocket-outline // color-palette-outline // bug-outline // flower-outline // -->
 
-        <div class="text">
-            <h1>hello</h1>
-            <br>
-            <p><h3>I'm a budding software engineer and CS student at Texas A&M University in College Station, TX. This site is a visual collection of some of my projects. Welcome!</h3></p>
-            <br>
+        <video id="indexVideo" src="videos/indexDay.MOV" muted loop autoplay>Video Unsupported</video>s
 
-            
-            <!-- <h1>Howdy</h1>
-            <h2>Howdy</h2>
-            <h3>Howdy</h3>
-            <h4>Howdy</h4>
-            <h5>Howdy</h5>
-            <h6>Howdy</h6> 
-        
-            🐝🐬⭐️🌟
-            🐝🐛🐌🐞🐬🌷💐🌹🥀🌺🌺🌸🌼🌻🌾⭐️🌟✨☀️💫⚡️🌤⛅️🌥💙💛🧡♥️
-        
-        -->
-
-
-
-
-
-            <!-- <a href="#">Explore Button Link</a> -->
+        <div class="indexText">
+            <table>
+                <tr>
+                    <th><span>
+                        <img src="photos/portrait.png" alt="portrait" width="300" height="300">
+                        <h2>Cesar Fuentes</h2>
+                        <br><h1>I'm a budding CS student at Texas A&M University in College Station, TX. This site is a visual collection of some of my projects. Welcome!</h1><br>                        
+                    </span></th>
+                </tr>
+            </table>
         </div>
-
 
         <div class="social">
             <a href="https://www.instagram.com/seazhurr/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -58,8 +55,13 @@
             <a href="mailto:seazhur@tamu.edu" target="_blank"> <ion-icon name="mail-outline"></ion-icon></a>
         </div>
 
-    </section>
 
+        <div class="configuration">
+            <a href="#" onclick="changeLightMode();"><ion-icon id="lightModeIcon" name="sunny-outline"></ion-icon></a>
+            <a href="#" onclick="changeVolumeMode();"><ion-icon id="volumeModeIcon" name="volume-off-outline"></ion-icon></a>
+        </div>
+
+    </section>
 </body>
 </html>
 
@@ -67,7 +69,16 @@
 
 
 
-<!-- TODO: Underline Page That You're Currently On -->
+<!-- Tech Skills, External Links, Format -->
+
 <!-- TODO: Add Transitional Slide When First Entering Page (Same Moving Image But With Name At Center) -->
-<!-- TODO: alt text is hover text -->
+<!-- TODO: Adjust All Alt Text To Be Meaningful Names -->
 <!-- TODO: Landing Page: Text Over Video Is Ugly and Unreadable -->
+<!-- TODO: STOP TEXT HOVER EFFECT ON LOWER BUTTONS -->
+<!-- TODO: Navigation Bar Not Centered -->
+
+<!-- Include Individual Links To Github Projects? -->
+<!-- Describe Technical Skills and Discuss Technical Areas of Interest in CS -->
+<!-- Minimum of 10 External Links? -->
+<!-- Secret Page -->
+<!-- One of pages text of 300 words or more describing either yourself, your portfolio, your qualifications, or your service in more detail.-->

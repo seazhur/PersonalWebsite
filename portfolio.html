@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
 
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- javascript -->
     <script type="text/javascript" src="functions.js"></script>
 
-
-
-    <title>Cesar Fuentes</title>
-
+    <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
-
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 
 </head>
-<body>
+
+<body id="portfolio">
     <section class="showcase">
 
         <nav>
-            <h2><a href="index.html" class="logo">Cesar Fuentes</a></h2>
-            <h5><a href="portfolio.html" class="logo"><u>Portfolio</u></a></h5>
-            <h5><a href="qualifications.html" class="logo">Qualifications</a></h5>
-            <h5><a href="service.html" class="logo">Service</a></h5>
-            <h5><a href="bio.html" class="logo">Bio</a></h5>
+            <ul>
+                <li><h5><a href="portfolio.html" class="logo">Portfolio</a></h5></li>
+                <li><h5><a href="qualifications.html" class="logo">Qualifications</a></h5></li>
+                <li><a href="index.html" id="homeIcon" class="logo"><ion-icon name="bug-outline" size="Default"></ion-icon></a></li>
+                <li><h5><a href="service.html" class="logo">Service</a></h5></li>
+                <li><h5><a href="bio.html" class="logo">Bio</a></h5></li>
+            </ul>            
         </nav>
 
-        <!-- CHANGE -->
+        <!-- // sparkles-outline // happy-outline // rocket-outline // color-palette-outline // bug-outline // flower-outline // -->
+
         <video src="videos/circuitboard.mp4" muted loop autoplay>Video Unsupported</video>
-        
-        <!-- CHANGE -->
-        <div class="text">
+
+        <div class="portfolioText">
             <h2 id="title">Projects</h2>
             <h3 id="subtitle">iOS & Web Development</h3>
-            <br>
-            <p id="description">The following are a collection of projects that I've done in the past.</p>
-            <br>
-
-
-            <h4><a href="#" id="button" class="learnMoreButton" onclick="showNextImage();">Get Started</a></h5>
-            <!-- Get Started -->
-
-
+            <br><p id="description">The following are a collection of projects that I've done in the past. Enjoy!</p><br>
+            <h4><a href="#" id="portfolioLeftButton" class="portfolioStartButton" onclick="showNextImage();">Get Started</a></h5>
         </div>
 
-
-        <div class="tablet">
-            <img src="photos/ipad.png" alt="iPad"  id="portfolioImage" width="500" height="671" style="visibility:hidden">
+        <div class="device">
+            <img src="photos/macbook.png" alt="iPad"  id="portfolioImage" style="visibility:hidden">
+            <!-- photos/ipad.png -->
             <!-- <h4><a href="#" class="nextButton" style="visibility:hidden">Next Project</a></h5> -->
         </div>
-
-
-
-
-
-
-
-
 
         <div class="social">
             <a href="https://www.instagram.com/seazhurr/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -70,7 +55,13 @@
             <a href="mailto:seazhur@tamu.edu" target="_blank"> <ion-icon name="mail-outline"></ion-icon></a>
         </div>
 
-    </section>
 
+        <div class="configuration">
+            <a href="#" onclick="changeLightMode();"><ion-icon id="lightModeIcon" name="sunny-outline" size="small"></ion-icon></a>
+            <a href="#" onclick="changeVolumeMode();"><ion-icon id="volumeModeIcon" name="volume-off-outline" size="large"></ion-icon></a>
+        </div>
+
+    </section>
 </body>
 </html>
+

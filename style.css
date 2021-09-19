@@ -1,4 +1,6 @@
 
+/* TEXT */
+
 @font-face {
     font-family: "apparel";
     src: url(fonts/Apparel\ Display\ Black\ It.ttf);
@@ -35,28 +37,13 @@ h3 {
     font-weight: 100;
 }
 
-
-
-
-
-
-
+/* GENERAL */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 .showcase {
     position: absolute;
@@ -72,24 +59,69 @@ h3 {
     z-index: 2;
 }
 
-.showcase nav {
+
+
+
+nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
     padding: 40px 100px;
-    z-index: 1000; /*way on top*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
+
 }
 
-.logo { /* what is this */
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+
+    
+
+}
+
+.nav a {
+    padding: 14px 10px;
+    text-transform: uppercase;
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.logo {
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    
 }
+
+span {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
 
 .showcase video {
     position: absolute;
@@ -98,20 +130,7 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
-}
-
-.text {
-    position: relative;
-    z-index: 10; 
-    width: 50%;
-}
-
-.text h2 {
-    font-size: 5em; /*current multiplied by 5*/
-    font-weight: 800;
-    line-height: 1em;
-    text-transform: uppercase;
+    opacity: 1;
 }
 
 .social {
@@ -124,11 +143,22 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+.configuration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    padding: 40px 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 ion-icon {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /*
@@ -137,50 +167,118 @@ ion-icon {
 }
 */
 
-.tablet {
+
+
+
+
+
+
+
+
+
+
+
+/* SPECIFIC */
+
+.indexText {
     position: relative;
+    text-align: center;
+    z-index: 10; 
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px #000000; */
+    text-shadow: 2px 2px 0px #000000;
+}
+
+
+
+table {
+    width: 100%;
+}
+
+th span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.indexText h2 {
+    font-size: 4em; /*current multiplied by 5*/
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO */
+
+.portfolioText {
+    position: relative;
+    text-align: left;
+    z-index: 10; 
+    width: 50%;
+}
+
+.portfolioText h2 {
+    font-size: 5em; /*current multiplied by 5*/
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.device {
+    position: absolute;
     z-index: 0; 
     width: 50%;
-    height: 50%;
-    margin:0 auto;
+    top: 130px;
+    right: 150px; 
+    margin: auto;
     display:block;
 }
 
 
-
-.tablet .nextButton {
-    background-color: #ff3737; /* Green */
+.portfolioStartButton {
+    background-color: #ff3737;
     text-decoration: none;
     color: white;
-
-    /* margin:0 auto; */
-
-    display: inline-block;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-
-}
-
-.text .learnMoreButton {
-    background-color: #ff3737; /* Green */
-    text-decoration: none;
-    color: white;
-    
     display: inline-block;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .resume {
     z-index: 10000000; 
 }
-
-
-
 
 .text .photosButton {
     background-color: #1CABE2; /* Green */
@@ -193,7 +291,6 @@ ion-icon {
     font-size: 16px;
 }
 
-
 .text .bioPhotosButton {
     background-color: #1c1fe2; /* Green */
     text-decoration: none;
@@ -204,7 +301,6 @@ ion-icon {
     text-align: center;
     font-size: 16px;
 }
-
 
 
 
