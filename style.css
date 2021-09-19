@@ -1,5 +1,10 @@
 
-/* TEXT */
+/*
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// TEXT ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
+
 
 @font-face {
     font-family: "apparel";
@@ -37,7 +42,11 @@ h3 {
     font-weight: 100;
 }
 
-/* GENERAL */
+/*
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// GENERAL ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
 * {
     box-sizing: border-box;
@@ -59,8 +68,21 @@ h3 {
     z-index: 2;
 }
 
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
 
-
+/*
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////// NAVIGATION /////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
 nav {
     position: absolute;
@@ -69,15 +91,12 @@ nav {
     width: 100%;
     z-index: 1000;
     padding: 40px 100px;
-    
-
 }
 
 nav ul {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    
 }
 
 nav ul li {
@@ -88,9 +107,6 @@ nav ul li {
     height: 100%;
     box-sizing: border-box;
     display: inline-block;
-
-    
-
 }
 
 .nav a {
@@ -106,32 +122,18 @@ nav ul li {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
-
-    
 }
 
 span {
     vertical-align: middle;
 }
 
+/*
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// BUTTONS ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
-
-
-
-
-
-
-
-
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-}
 
 .social {
     position: absolute;
@@ -167,18 +169,11 @@ ion-icon {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-/* SPECIFIC */
+/*
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// INDEX ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
 .indexText {
     position: relative;
@@ -188,8 +183,6 @@ ion-icon {
     /* text-shadow: 2px 2px #000000; */
     text-shadow: 2px 2px 0px #000000;
 }
-
-
 
 table {
     width: 100%;
@@ -208,31 +201,36 @@ th span {
     text-transform: uppercase;
 }
 
+/*
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////// PORTFOLIO //////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
+.pContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 10000;
+}
 
+img {
+    max-width: 100%
+}
 
+.pImage {
+    flex-basis: 40%;
 
-
-
-
-
-
-
-/* PORTFOLIO */
-
-.portfolioText {
-    position: relative;
-    text-align: left;
-    z-index: 10; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
 
-.portfolioText h2 {
-    font-size: 5em; /*current multiplied by 5*/
-    font-weight: 800;
-    line-height: 1em;
-    text-transform: uppercase;
-}
+
+
+
+/*
 
 .device {
     position: absolute;
@@ -244,8 +242,24 @@ th span {
     display:block;
 }
 
+*/
 
-.portfolioStartButton {
+
+
+
+.pText {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.pText h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.pStartButton {
     background-color: #ff3737;
     text-decoration: none;
     color: white;
@@ -253,6 +267,20 @@ th span {
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+.pGithubButton {
+    background-color: #374bff;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 50px;
 }
 
 
@@ -268,17 +296,40 @@ th span {
 
 
 
+/*
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// QUALIFICATIONS ///////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
-
-
-
-
-
-
-
-.resume {
-    z-index: 10000000; 
+.qContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 10000;
 }
+
+.qImage {
+    flex-basis: 40%
+}
+
+.qText {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.qText h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// SERVICE ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
 
 .text .photosButton {
     background-color: #1CABE2; /* Green */
@@ -291,6 +342,12 @@ th span {
     font-size: 16px;
 }
 
+/*
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// BIO /////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
+
 .text .bioPhotosButton {
     background-color: #1c1fe2; /* Green */
     text-decoration: none;
@@ -301,7 +358,3 @@ th span {
     text-align: center;
     font-size: 16px;
 }
-
-
-
-

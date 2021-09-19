@@ -16,6 +16,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 
+    <title>Cesar Fuentes</title>
 </head>
 
 <body id="portfolio">
@@ -25,7 +26,7 @@
             <ul>
                 <li><h5><a href="portfolio.html" class="logo">Portfolio</a></h5></li>
                 <li><h5><a href="qualifications.html" class="logo">Qualifications</a></h5></li>
-                <li><a href="index.html" id="homeIcon" class="logo"><ion-icon name="bug-outline" size="Default"></ion-icon></a></li>
+                <li><a href="index.html" id="homeIcon" class="logo"><ion-icon name="bug-outline""></ion-icon></a></li>
                 <li><h5><a href="service.html" class="logo">Service</a></h5></li>
                 <li><h5><a href="bio.html" class="logo">Bio</a></h5></li>
             </ul>            
@@ -35,17 +36,18 @@
 
         <video src="videos/circuitboard.mp4" muted loop autoplay>Video Unsupported</video>
 
-        <div class="portfolioText">
-            <h2 id="title">Projects</h2>
-            <h3 id="subtitle">iOS & Web Development</h3>
-            <br><p id="description">The following are a collection of projects that I've done in the past. Enjoy!</p><br>
-            <h4><a href="#" id="portfolioLeftButton" class="portfolioStartButton" onclick="showNextImage();">Get Started</a></h5>
-        </div>
+        <div class="pContainer">
+            <div class="pText">
+                <h2 id="title">Projects</h2>
+                <h3 id="subtitle">iOS & Web Development</h3>
+                <br><p id="description">The following is a collection of projects that I've done in the past. Enjoy!</p><br>
+                <h4><a href="#" id="portfolioLeftButton" class="pStartButton" onclick="showNextImage();">Get Started</a></h5>
+                <h4><a href="https://github.com/seazhur" id="githubButton" target="_blank" class="pGithubButton" style="visibility:hidden">See Project</a></h5>
+            </div>
 
-        <div class="device">
-            <img src="photos/macbook.png" alt="iPad"  id="portfolioImage" style="visibility:hidden">
-            <!-- photos/ipad.png -->
-            <!-- <h4><a href="#" class="nextButton" style="visibility:hidden">Next Project</a></h5> -->
+            <div class="pImage">
+                <img src="photos/macbook.png" alt="deviceImage"  id="portfolioImage" style="visibility:hidden">
+            </div>
         </div>
 
         <div class="social">
@@ -58,7 +60,7 @@
 
         <div class="configuration">
             <a href="#" onclick="changeLightMode();"><ion-icon id="lightModeIcon" name="sunny-outline" size="small"></ion-icon></a>
-            <a href="#" onclick="changeVolumeMode();"><ion-icon id="volumeModeIcon" name="volume-off-outline" size="large"></ion-icon></a>
+            <a href="#" onclick="changeVolumeMode();"><ion-icon id="volumeModeIcon" name="volume-off-outline" size="small"></ion-icon></a>
         </div>
 
     </section>
