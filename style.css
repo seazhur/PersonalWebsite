@@ -218,38 +218,9 @@ img {
     max-width: 100%
 }
 
-.pImage {
-    flex-basis: 40%;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
-
-
-/*
-
-.device {
-    position: absolute;
-    z-index: 0; 
-    width: 50%;
-    top: 130px;
-    right: 150px; 
-    margin: auto;
-    display:block;
-}
-
-*/
-
-
-
-
 .pText {
-    width: 40%;
-    padding-right: 20px;
+    width: 50%;
+    padding-right: 40px;
 }
 
 .pText h2 {
@@ -257,6 +228,16 @@ img {
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
+}
+
+.pImage {
+    flex-basis: auto;
+
+    display: block;
+
+    margin-left: 100px;
+    margin-right: auto;
+    width: 100%;
 }
 
 .pStartButton {
@@ -282,19 +263,6 @@ img {
     margin: 5px;
     border-radius: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 //////////////////////////////////////////////////////////////////////////////
@@ -331,15 +299,38 @@ img {
 //////////////////////////////////////////////////////////////////////////////
 */
 
-.text .photosButton {
-    background-color: #1CABE2; /* Green */
+
+
+
+.sContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 10000;
+}
+
+.sText {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.sText h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.sPhotoButton {
+    background-color: #1CABE2;
     text-decoration: none;
     color: white;
-    
     display: inline-block;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
+    margin: 5px;
+    border-radius: 50px;
 }
 
 /*
@@ -348,13 +339,21 @@ img {
 //////////////////////////////////////////////////////////////////////////////
 */
 
-.text .bioPhotosButton {
-    background-color: #1c1fe2; /* Green */
-    text-decoration: none;
-    color: white;
-    
-    display: inline-block;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
+.bContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 10000;
+}
+
+.bText {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.bText h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
 }
