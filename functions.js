@@ -55,22 +55,35 @@ function showNextImage(){
         document.getElementById('portfolioLeftButton').textContent = "Get Started";
 
     }
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
 
 function changeLightMode(){
 
     var icon = document.getElementById("lightModeIcon");
+
     if (icon.name == "sunny-outline") {
         icon.name = "moon-outline";        
+
         document.getElementById("indexVideo").src = "videos/indexNight.mp4";
-        document.getElementById("showcase").color = "black";
+        document.getElementById("portfolioVideo").src = "videos/portfolioNight.mp4";
+
+        localStorage.setItem("isLightOn", "false");
     } else {
         icon.name = "sunny-outline";
+
         document.getElementById("indexVideo").src = "videos/indexDay.MOV";
+        document.getElementById("portfolioVideo").src = "videos/portfolioDay.mp4";
+
+        localStorage.setItem("isLightOn", "true");
     }
 
 }
@@ -84,4 +97,20 @@ function changeVolumeMode(){
         icon.name = "volume-high-outline";
     }
 
+}
+
+window.onload = function(){
+
+    var lightMode = localStorage.getItem("isLightOn");
+    var icon = document.getElementById("lightModeIcon");
+
+    if (lightMode == "true") {
+        icon.name = "sunny-outline";
+        document.getElementById("indexVideo").src = "videos/indexDay.MOV";
+        
+    } else {
+        icon.name = "moon-outline";
+        document.getElementById("indexVideo").src = "videos/indexNight.mp4";
+        
+    }
 }
