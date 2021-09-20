@@ -74,14 +74,12 @@ function changeLightMode(){
         icon.name = "moon-outline";        
 
         document.getElementById("indexVideo").src = "videos/indexNight.mp4";
-        document.getElementById("portfolioVideo").src = "videos/portfolioNight.mp4";
 
         localStorage.setItem("isLightOn", "false");
     } else {
         icon.name = "sunny-outline";
 
         document.getElementById("indexVideo").src = "videos/indexDay.MOV";
-        document.getElementById("portfolioVideo").src = "videos/portfolioDay.mp4";
 
         localStorage.setItem("isLightOn", "true");
     }
