@@ -292,6 +292,18 @@ img {
     text-transform: uppercase;
 }
 
+.resumeButton {
+    background-color: #aa1ce2;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
 /*
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// SERVICE ///////////////////////////////////
