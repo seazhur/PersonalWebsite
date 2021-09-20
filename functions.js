@@ -73,15 +73,14 @@ function changeLightMode(){
     if (icon.name == "sunny-outline") {
         icon.name = "moon-outline";        
 
-        document.getElementById("indexVideo").src = "videos/indexNight.mp4";
+        // document.getElementById("indexVideo").src = "videos/indexNight.mp4";
+        // localStorage.setItem("isLightOn", "false");
 
-        localStorage.setItem("isLightOn", "false");
     } else {
         icon.name = "sunny-outline";
 
-        document.getElementById("indexVideo").src = "videos/indexDay.MOV";
-
-        localStorage.setItem("isLightOn", "true");
+        // document.getElementById("indexVideo").src = "videos/indexDay.MOV";
+        // localStorage.setItem("isLightOn", "true");
     }
 
 }
@@ -97,6 +96,7 @@ function changeVolumeMode(){
 
 }
 
+/*
 window.onload = function(){
 
     var lightMode = localStorage.getItem("isLightOn");
@@ -112,3 +112,4 @@ window.onload = function(){
         
     }
 }
+*/
