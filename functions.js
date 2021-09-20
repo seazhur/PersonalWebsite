@@ -73,13 +73,13 @@ function changeLightMode(){
     if (icon.name == "sunny-outline") {
         icon.name = "moon-outline";        
 
-        // document.getElementById("indexVideo").src = "videos/indexNight.mp4";
+        document.getElementById("indexVideo").src = "videos/galaxy.mp4";
         // localStorage.setItem("isLightOn", "false");
 
     } else {
         icon.name = "sunny-outline";
 
-        // document.getElementById("indexVideo").src = "videos/indexDay.MOV";
+        document.getElementById("indexVideo").src = "videos/sunflowers.MOV";
         // localStorage.setItem("isLightOn", "true");
     }
 
